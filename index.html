@@ -6,23 +6,32 @@
   </head>
   <body>
   	<header class="main-header">
-  	  <nav class="main-navigation">
-  	  	<a class="main-header-logo">
-  	  	  <img src="http://placehold.it/150x70" width="150" height="70" alt="Логотип Нёрдс"
-  	  	</a>
-  	    <ul class="site-navigation">
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="#">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-          <li><a href="#">Корзина</a></li>
-        </ul>
-       </nav>
-      <section class="slogan">
-      	<p>Долго, дорого, скрупулезно.</p>
-      	<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-      	<a href="#">Узнать больше</a>
-      </section>
+  	<div class="main-header-logo"><img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип Нёрдс">
+  	</div>
+  	<nav class="main-navigation">
+  	  <ul class="site-navigation">
+        <li><a href="#">Студия</a></li>
+        <li><a href="#">Клиенты</a></li>
+        <li><a href="#">Магазин</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <a class="basket" href="#">Корзина</a>
+     </nav>
+     <section class="slogan">
+      <p class="slogan-main">Долго, дорого, скрупулезно.</p>
+      <p class="slogan-small">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+      <a href="#">Узнать больше</a>
+     </section>
+     <section class="wrapper">
+	   <input type="radio" name="point" id="slide1" checked>
+	   <input type="radio" name="point" id="slide2">
+	   <input type="radio" name="point" id="slide3">
+	 <div class="controls">
+	   <label for="slide1"></label>
+	   <label for="slide2"></label>
+	   <label for="slide3"></label>
+	</div>
+    </section>
      </header>
    
    <main class="container">
@@ -34,23 +43,22 @@
               <h3>Веб-сайты</h3>
               <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
             </li>
-              <a class="button" href="#">Заказать</a>
+              <input type="button" value="Заказать">
             <li class="services-item">
               <h3>Приложения</h3>
               <p>Покорите топ-10 приложений в AppStore и Google Play</p>
             </li>
-              <a class="button" href="#">Заказать</a>
+              <input type="button" value="Заказать">
             <li class="services-item">
               <h3>Презентации</h3>
               <p>Вы даже не подозреваете, насколько вы изумительны!</p>
             </li>
-              <a class="button" href="#">Заказать</a>
+              <input type="button" value="Заказать">
         </ul>
     </section>
-
     <section class="features">
-      <p>Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-      <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+      <p class="features-large">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+      <p class="features-small">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
     </section>
     <section class="features-list">
       <h3>Выполняем заказы на разработку:</h3>
@@ -60,8 +68,7 @@
    		  <li>Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
     </section>
-      <table>
-      	<th>С 2004 года любим точность во всем:</th>
+      <table><th>С 2004 года любим точность во всем:</th>
           <tr>
             <td><span class="table-numbers">146</span><sup>%</sup></td>
             <td><span class="table-numbers">100</span><sup>%</sup></td>
@@ -74,8 +81,33 @@
            </tr>
        </table> 
    </main>
-     <footer class="main-footer">
-       <section class="footer-contacts">
+   <footer class="main-footer">
+     <section class="footer-projects">
+       <div class="logo1">
+         <a href="https://htmlacademy.ru/intensive/htmlcss">
+           <img src="http://placehold.it/150x100" width="150" height="100" alt="HTML Academy">
+         </a>
+       </div>
+       <div class="logo2">
+         <a href="#">
+           <img src="http://placehold.it/150x100" width="150" height="100" alt="Borodinsky">
+         </a>
+       </div>
+       <div class="logo3">
+         <a href="#">
+           <img src="http://placehold.it/150x100" width="150" height="100" alt="Pink">
+         </a>
+       </div>
+       <div class="logo4">
+         <a href="#">
+           <img src="http://placehold.it/150x100" width="150" height="100" alt="Mishka">
+         </a>
+       </div>
+      </section>
+     <section class="footer-map">
+       <img src="#" width="100%">
+     </section>
+     <section class="footer-contacts">
          <h3>NЁRDS DESIGN STUDIO</h3>
          <p>191186, Санкт-Петербург,<br>
            ул. Б. Конюшенная, д. 19/8<p>
