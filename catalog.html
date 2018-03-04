@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <title>Нёрдс: магазин</title>
 </head>
 
 <body>
@@ -13,63 +13,75 @@
         </a>
         <nav class="catalog-navigation">
             <ul class="catalog-site-navigation">
-                <li><a href="#">Студия</a></li>
-                <li><a href="#">Клиенты</a></li>
-                <li><a href="#">Магазин</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="index.html">Студия</a></li>
+                <li><a href="clients.html">Клиенты</a></li>
+                <li><a>Магазин</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
             </ul>
-            <a class="basket" href="#">Корзина</a>
         </nav>
+        <div class="basket"><a href="basket.html">Корзина</a>
+        </div>
         <h1>Магазин готовых шаблонов</h1>
     </header>
 
     <main>
-        <section class="price-slider">
-            <h2>Стоимость:</h2>
-            <!-- Здесь будет форма -->
-        </section>
-        <section class="grid">
-            <h2>Сетка:</h2>
-            <!-- Здесь будет форма -->
-        </section>
-        <section class="view">
-            <h2>Особенности:</h2>
-            <!-- Здесь будет форма -->
-        </section>
         <section class="filters">
-            <h2 class="visually-hidden">Фильтр товаров</h2>
-            <!-- Здесь будет форма -->
+            <div class="price-slider">
+                <h2>Стоимость:</h2>
+                <!-- Здесь будет форма -->
+            </div>
+            <form>
+                <fieldset class="grid">
+                    <!-- Здесь будет форма -->
+                </fieldset>
+                <fieldset class="view">
+                    <!-- Здесь будет форма -->
+                </fieldset>
+            </form>
         </section>
-
         <section class="catalog">
             <h2 class="visually-hidden">Список проектов</h2>
+            <form class="sort">
+                <!-- Здесь будет форма -->
+                <h3>Сортировать:</h3>
+                <button>По цене</button>
+                <button>По типу</button>
+                <button>По названию</button>
+                <button>По убыванию</button>
+                <button>По возрастанию</button>
+            </form>
             <ul class="catalog-list">
-                <li class="catalog-item1">
+                <li class="sedona">
                     <p class="catalog-item-image">
                         <a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="Sedona"></a>
                     </p>
+                    <div class="hover">
+                        <h3>Sedona</h3>
+                        <p>Информационный сайт для туристов</p>
+                        <a href="basket.html">9 900 руб.</a>
+                    </div>
                 </li>
-                <li class="catalog-item2">
+                <li class="pink">
                     <p class="catalog-item-image">
                         <a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="Pink"></a>
                     </p>
                 </li>
-                <li class="catalog-item3">
+                <li class="borodinsky">
                     <p class="catalog-item-image">
                         <a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="Borodinsky"></a>
                     </p>
                 </li>
-                <li class="catalog-item4">
+                <li class="mishka">
                     <p class="catalog-item-image">
                         <a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="Mishka"></a>
                     </p>
                 </li>
-                <li class="catalog-item5">
+                <li class="aplus">
                     <p class="catalog-item-image">
-                        <a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="A"></a>
+                        <a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="Aplus"></a>
                     </p>
                 </li>
-                <li class="catalog-item6">
+                <li class="kvas">
                     <p class="catalog-item-image">
                         <a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="Kvas"></a>
                     </p>
@@ -82,22 +94,18 @@
                 <li class="pagination-item"><a href="#">Следующая</a></li>
             </ul>
         </section>
-
+        <section class="contacts">
+            <div class="map"><img src="#" alt="Карта">
+            </div>
+            <div class="address">
+                <h3>Nёrds design studio</h3>
+                <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                <a href="tel:+78122757575">+7 (812) 275-75-75</a>
+                <a class="button" href="contact-us.html">Напишите нам</a>
+            </div>
+        </section>
     </main>
-
-    <footer class="catalog-footer">
-        <section class="footer-map">
-            <img src="#" alt="Карта">
-        </section>
-        <section class="footer-contacts">
-            <h3>NЁRDS DESIGN STUDIO</h3>
-            <p>191186, Санкт-Петербург,
-                <br> ул. Б. Конюшенная, д. 19/8</p>
-            <p>тел. +7 (812) 275-75-75
-                <br>
-                <a class="button" href="#">Напишите нам</a>
-            </p>
-        </section>
+    <footer class="main-footer">
         <div class="footer-social">
             <p><b>Давайте дружить, это выгодно!</b></p>
             <p>Скидка 10% для друзей из социальных сетей.</p>
@@ -108,7 +116,6 @@
             </ul>
         </div>
     </footer>
-
 </body>
 
 </html>
