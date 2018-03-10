@@ -8,9 +8,9 @@
 
 <body>
     <header class="main-header">
-        <div class="main-header-logo"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
+        <div class="main-header-logo" aria-label="Логотип компании"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
         </div>
-        <nav class="main-navigation">
+        <nav class="main-navigation" aria-label="Навигация сайта">
             <ul class="site-navigation">
                 <li><a>Студия</a></li>
                 <li><a href="clients.html">Клиенты</a></li>
@@ -26,6 +26,7 @@
     <main class="container">
         <h1 class="visually-hidden">Студия Нёрдс</h1>
         <section class="slider">
+            <h2 class="visually-hidden">Преимущества</h2>
             <div class="slogan">
                 <p class="slogan-main"><b>Долго, дорого, скрупулезно.</b></p>
                 <p class="slogan-small">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
@@ -42,9 +43,9 @@
                 <a href="#">Узнать больше</a>
             </div>
             <div class="slider">
-                <input type="radio" name="point" id="slide1" checked>
-                <input type="radio" name="point" id="slide2">
-                <input type="radio" name="point" id="slide3">
+                <input type="radio" name="slider-list" id="slide1" checked>
+                <input type="radio" name="slider-list" id="slide2">
+                <input type="radio" name="slider-list" id="slide3">
             </div>
             <div class="controls">
                 <label for="slide1"></label>
@@ -104,29 +105,29 @@
             </ul>
         </section>
 
-        <section class="projects">
+        <section class="projects" aria-label="Проекты">
             <ul>
                 <li>
-                    <a href="https://htmlacademy.ru/intensive/htmlcss">
+                    <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Академия HTML">
                         <img src="img/logo-1.png" width="199" height="68" alt="HTML Academy"></a>
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="#" aria-label="Барбершоп Бординский">
                         <img src="img/logo-2.png" width="209" height="87" alt="Borodinsky"></a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" aria-label="Пинк">
                         <img src="img/logo-3.png" width="185" height="52" alt="Pink"></a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" aria-label="Мишка">
                         <img src="img/logo-4.png" width="173" height="84" alt="Mishka"></a>
                 </li>
             </ul>
         </section>
-        <section class="contacts">
-            <div class="map"><img src="img/map.jpg" width="1440" height="416" alt="Карта">
+        <section class="contacts" aria-label="Контактная информация">
+            <div class="map"><img src="img/map.jpg" width="1440" height="416" alt="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
             </div>
             <div class="address">
                 <h3>Nёrds design studio</h3>
@@ -135,15 +136,40 @@
                 <a class="button" href="contacts.html">Напишите нам</a>
             </div>
         </section>
+        <section class="modal contact-us">
+            <h2>Напишите нам</h2>
+            <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+                <p>
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" name="contact-name" placeholder="Имя Фамилия">
+                </p>
+                <p>
+                    <label for="email">Ваш e-mail:</label>
+                    <input type="text" id="email" name="password" placeholder="email@example.com">
+                </p>
+                <p>
+                    <label for="message">Текст письма:</label>
+                    <textarea id="message" name="message" placeholder="В свободной форме" rows="5"></textarea>
+                </p>
+                <button class="button" type="submit">Отправить</button>
+            </form>
+            <button class="modal-close" type="button" name="close" aria-label="Закрыть окно"></button>
+        </section>
     </main>
     <footer class="main-footer">
         <div class="footer-social">
             <p><b>Давайте дружить, это выгодно!</b></p>
             <p>Скидка 10% для друзей из социальных сетей.</p>
             <ul>
-                <li><a class="social-button" href="#">Вконтакте</a></li>
-                <li><a class="social-button" href="#">Фейсбук</a></li>
-                <li><a class="social-button" href="#">Инстаграм</a></li>
+                <li>
+                    <a class="social-button" href="https://vk.com/" aria-label="Вконтакте"></a>
+                </li>
+                <li>
+                    <a class="social-button" href="https://facebook.com/" aria-label="Фейсбук"></a>
+                </li>
+                <li>
+                    <a class="social-button" href="https://instagram.com/" aria-label="Инстаграм"></a>
+                </li>
             </ul>
         </div>
     </footer>
