@@ -26,14 +26,10 @@
 
     <main>
         <form class="filters" method="get" action="https://echo.htmlacademy.ru">
-            <fieldset class="price">
-                <legend>Стоимость:</legend>
-                <input type="range" name="price" min="0" max="15000" step="1" id="price-slider">
-                <input type="number" name="price" id="price-min" value="0">
-                <label for="price-min">от</label>
-                <input type="number" name="price" id="price-max" value="15000">
-                <label for="price-max">до</label>
-            </fieldset>
+            <div class="price-range">
+                <h3>Стоимость:</h3>
+                <!--Плагин-->
+            </div>
             <fieldset class="grid">
                 <legend>Сетка:</legend>
                 <ul>
@@ -168,11 +164,11 @@
                 </p>
                 <p>
                     <label for="email">Ваш e-mail:</label>
-                    <input type="text" id="email" name="password" placeholder="email@example.com">
+                    <input type="text" id="email" name="email" placeholder="email@example.com">
                 </p>
                 <p>
                     <label for="message">Текст письма:</label>
-                    <textarea id="message" name="message" placeholder="В свободной форме" rows="5"></textarea>
+                    <textarea id="message" name="message" placeholder="В свободной форме"></textarea>
                 </p>
                 <button class="button" type="submit">Отправить</button>
             </form>
