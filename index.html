@@ -136,25 +136,6 @@
                 <a class="button" href="contacts.html">Напишите нам</a>
             </div>
         </section>
-        <section class="modal contact-us">
-            <h2>Напишите нам</h2>
-            <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
-                <p>
-                    <label for="name">Ваше имя:</label>
-                    <input type="text" id="name" name="contact-name" placeholder="Имя Фамилия">
-                </p>
-                <p>
-                    <label for="email">Ваш e-mail:</label>
-                    <input type="text" id="email" name="email" placeholder="email@example.com">
-                </p>
-                <p>
-                    <label for="message">Текст письма:</label>
-                    <textarea id="message" name="message" placeholder="В свободной форме"></textarea>
-                </p>
-                <button class="button" type="submit">Отправить</button>
-            </form>
-            <button class="modal-close" type="button" name="close" aria-label="Закрыть окно"></button>
-        </section>
     </main>
     <footer class="main-footer">
         <div class="footer-social">
@@ -173,7 +154,25 @@
             </ul>
         </div>
     </footer>
-
+    <section class="modal contact-us">
+        <h2>Напишите нам</h2>
+        <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+            <p>
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="contact-name" placeholder="Имя Фамилия">
+            </p>
+            <p>
+                <label for="email">Ваш e-mail:</label>
+                <input type="email" id="email" name="email" placeholder="email@example.com">
+            </p>
+            <p>
+                <label for="message">Текст письма:</label>
+                <textarea id="message" name="message" placeholder="В свободной форме"></textarea>
+            </p>
+            <button class="button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close" type="button" name="close" aria-label="Закрыть окно"></button>
+    </section>
 </body>
 
 </html>
