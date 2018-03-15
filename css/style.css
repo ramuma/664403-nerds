@@ -46,7 +46,7 @@ body {
 }
  .basket a:active {
      color: black;
-     text-decoration: underline;
+     text-decoration: underline #ff6666;
 }
  .site-navigation a {
      color: black;
@@ -310,17 +310,19 @@ body {
  .pagination-item a {
      background-color: #eeeeee;
      text-decoration: none;
+     color: black;
+     text-transform: uppercase;
 }
  .pagination-item a:hover {
      background-color: #dfdfdf;
 }
  .pagination-item a:focus {
-     color: #959595;
      background-color: #d5d5d5;
+     opacity: 0.3;
 }
  .pagination-item a:active {
      color: black;
-     background-color: #d5d5d5;
+     background-color: #cccccc;
      opacity: 0.3;
 }
  .pagination-item-current a {
