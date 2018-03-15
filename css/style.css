@@ -1,0 +1,328 @@
+body {
+     margin: 0;
+     padding: 0;
+     font-family: "Roboto", Arial, sans-serif;
+     font-size: 16px;
+     line-height: 24px;
+     font-weight: 400;
+     color: #333333;
+}
+ a {
+     text-decoration: none;
+}
+ .main-navigation {
+     line-height: 30px;
+     font-weight: 500;
+     text-transform: uppercase;
+     background-color: #eeeeee;
+}
+ .main-header-logo img:hover {
+     opacity: 0.8;
+}
+ .main-header-logo img:active {
+     opacity: 0.3;
+}
+ .site-navigation {
+     list-style: none;
+}
+ .basket {
+     list-style: none;
+     line-height: 30px;
+     font-weight: 500;
+     text-transform: uppercase;
+     background-color: #eeeeee;
+}
+ .basket a {
+     color: black;
+}
+ .basket::before {
+     content: url(img/cart-icon.svg);
+}
+ .basket a:hover {
+     color: #ff6666;
+}
+ .basket a:focus {
+     opacity: 30%;
+}
+ .basket a:active {
+     color: black;
+     text-decoration: underline;
+}
+ .site-navigation a {
+     color: black;
+}
+ .site-navigation a:hover {
+     color: #ff6666;
+}
+ .site-navigation a:focus {
+     opacity: 30%;
+}
+ .site-navigation a:active {
+     color: black;
+     text-decoration: underline;
+}
+ .slogan-main {
+     font-size: 55px;
+     line-height: 55px;
+     text-align: left;
+     font-weight: 500;
+     color: black;
+}
+ .services-item {
+     list-style: none;
+}
+ .button {
+     line-height: 18px;
+     text-align: center;
+     color: white;
+     vertical-align: middle;
+     text-transform: uppercase;
+     font-weight: 500;
+     background-color: #ff6666;
+     border: none;
+}
+ .button:hover {
+     background-color: #ff3333;
+}
+ .button:focus {
+     background-color: #cc3333;
+     opacity: 0.3;
+     box-shadow: inset 1px 1px 0 #fff;
+}
+ .button.second {
+     background-color: #00cc66;
+}
+ .button.second:hover {
+     background-color: #339966;
+}
+ .button.second:focus {
+     background-color: #009966;
+     opacity: 0.3;
+     box-shadow: inset 1px 1px 0 #fff;
+}
+ .button.third {
+     background-color: #ffcc33;
+}
+ .button.third:hover {
+     background-color: #eab534;
+}
+ .button.third:focus {
+     background-color: #cc9933;
+     opacity: 0.3;
+     box-shadow: inset 1px 1px 0 #fff;
+}
+ .first-slide {
+     background-image: url(img/slide1.png);
+}
+ .second-slide {
+     background-image: url(img/slide2.png);
+}
+ .third-slide {
+     background-image: url(img/slide3.png);
+}
+ .services-item h3 {
+     font-size: 24px;
+     line-height: 30px;
+     text-transform: uppercase;
+     text-align: left;
+     font-weight: 700;
+     color: black;
+}
+ .features-large {
+     font-size: 45px;
+     line-height: 45px;
+     font-weight: 500;
+     color: black;
+}
+ .features-small {
+     font-size: 16px;
+     line-height: 24px;
+     text-transform: uppercase;
+     text-align: left;
+     font-weight: 700;
+     color: black;
+}
+ .features-list {
+     list-style-type: none;
+}
+ .features-list::before {
+     content: "— ";
+     color: #ff6666;
+}
+ .numbers {
+     font-size: 45px;
+     line-height: 10.06px;
+     font-weight: 700;
+     color: black;
+}
+ .projects {
+     opacity: 0.2;
+}
+ .projects:hover {
+     opacity: 1;
+}
+ .projects:active {
+     opacity: 0.1;
+}
+ .address p {
+     color: #666666;
+}
+ .phone {
+     color: #666666;
+     text-decoration: none;
+}
+ .address h3 {
+     font-size: 18px;
+     line-height: 30px;
+     text-transform: uppercase;
+     text-align: left;
+     font-weight: 700;
+     color: black;
+}
+ .friendship-large {
+     font-size: 36px;
+     line-height: 36px;
+     font-weight: 700;
+}
+ .friendship-small {
+     line-height: 22px;
+}
+/* Модальное окно "Напишите нам" */
+ .contact-us h2 {
+     font-size: 45px;
+     line-height: 45px;
+     font-weight: 500;
+}
+ label {
+     font-size: 16px;
+     line-height: 18px;
+     font-weight: 700;
+}
+ .placeholder {
+     font: inherit;
+     opacity: 0.5;
+}
+ .name input,
+ .message textarea {
+  border: 3px solid grey;
+}
+ .modal-close {
+     width: 21px;
+     height: 21px;
+     background: url(img/close-cross.svg);
+}
+ .list-social {
+     list-style: none;
+}
+/* Каталог*/
+ .catalog-navigation {
+     line-height: 30px;
+     font-weight: 500;
+     text-transform: uppercase;
+     background-color: #eeeeee;
+}
+ .catalog-site-navigation {
+     list-style: none;
+}
+ fieldset {
+     font: inherit;
+     border: none;
+}
+ legend {
+     font-size: 18px;
+     line-height: 30px;
+     font-weight: 700;
+     text-transform: uppercase;
+}
+ .grid, .features, .sort {
+     list-style: none;
+     color: #333333;
+}
+ .sort-title {
+     font-size: 18px;
+     line-height: 18px;
+     font-weight: 700;
+     text-transform: uppercase;
+}
+ .sort a {
+     color:black;
+     text-decoration: none;
+     font-size: 14px;
+     line-height: 18px;
+     text-transform: uppercase;
+     opacity: 0.3;
+}
+ .sort a:hover {
+     opacity: 0.6;
+}
+ .sort a:focus {
+     opacity: 1;
+}
+ a.arrow {
+     display: inline-block;
+     margin: 0 10px;
+     font-size: 0;
+}
+ .arrow-up::before {
+     content: url(img/icon-up-dir.svg);
+}
+ .arrow-down::before {
+     content: url(img/icon-down-dir.svg);
+}
+ .catalog-list {
+     list-style: none;
+}
+ .sedona-hover h3 {
+     font-size: 18px;
+     line-height: 30x;
+     text-transform: uppercase;
+     font-weight: bold;
+}
+ .button-hover {
+     line-height: 18px;
+     text-align: center;
+     color: white;
+     vertical-align: middle;
+     text-transform: uppercase;
+     font-weight: 500;
+     background-color: #ff6666;
+     border: none;
+}
+ .button-hover:hover {
+     background-color: #ff3333;
+}
+ .button-hover:focus {
+     background-color: #d7373b;
+}
+ .pagination-list {
+     list-style: none;
+}
+ .pagination-item a {
+     background-color: #eeeeee;
+     text-decoration: none;
+}
+ .pagination-item a:hover {
+     background-color: #dfdfdf;
+}
+ .pagination-item a:focus {
+     color: #959595;
+     background-color: #d5d5d5;
+}
+ .pagination-item a:active {
+     color: black;
+     background-color: #d5d5d5;
+     opacity: 0.3;
+}
+ .pagination-item-current a {
+     color: black;
+     border:3px solid #dbdbdb;
+     background-color: #ffffff;
+}
+/* Дополнительно*/
+ .visually-hidden {
+     position: absolute;
+     clip: rect(0 0 0 0);
+     width: 1px;
+     height: 1px;
+     margin: -1px;
+}
