@@ -29,6 +29,20 @@ body {
  .site-navigation {
      list-style: none;
 }
+.site-navigation a {
+     color: black;
+}
+ .site-navigation a:hover {
+     color: #ff6666;
+}
+ .site-navigation a:focus {
+     opacity: 0.3;
+}
+ .site-navigation a:active {
+     color: black;
+     border-bottom: 2px solid #ff6666;
+}
+
  .basket {
      list-style: none;
      line-height: 30px;
@@ -46,24 +60,11 @@ body {
      color: #ff6666;
 }
  .basket a:focus {
-     opacity: 30%;
+     opacity: 0.3%;
 }
- .basket a:active {
+.basket a:active {
      color: black;
-     text-decoration: underline #ff6666;
-}
- .site-navigation a {
-     color: black;
-}
- .site-navigation a:hover {
-     color: #ff6666;
-}
- .site-navigation a:focus {
-     opacity: 30%;
-}
- .site-navigation a:active {
-     color: black;
-     text-decoration: underline;
+     border-bottom: 2px solid #ff6666;
 }
  .slogan-main {
      font-size: 55px;
@@ -90,7 +91,7 @@ body {
 }
  .button:focus {
      background-color: #cc3333;
-     opacity: 0.3;
+     color: #cc9999;
      box-shadow: inset 1px 1px 0 #fff;
 }
  .button.second {
@@ -101,7 +102,7 @@ body {
 }
  .button.second:focus {
      background-color: #009966;
-     opacity: 0.3;
+     color: #66cc99;
      box-shadow: inset 1px 1px 0 #fff;
 }
  .button.third {
@@ -112,7 +113,7 @@ body {
 }
  .button.third:focus {
      background-color: #cc9933;
-     opacity: 0.3;
+     color: #ffcc66;
      box-shadow: inset 1px 1px 0 #fff;
 }
  .first-slide {
