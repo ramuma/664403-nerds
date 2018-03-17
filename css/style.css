@@ -320,6 +320,19 @@ label[for="message"] {
     color: #000000;
 }
 
+.catalog-site-navigation a:hover {
+    color: #ff6666;
+}
+
+.catalog-site-navigation a:focus {
+    opacity: 0.3;
+}
+
+.catalog-site-navigation a:active {
+    color: black;
+    border-bottom: 2px solid #ff6666;
+}
+
 .filters-set {
     border: none;
 }
