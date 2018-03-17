@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Нёрдс: магазин</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-  </head>
+</head>
 
 <body>
     <header class="catalog-header">
@@ -28,8 +29,8 @@
 
     <main>
         <form class="filters" method="get" action="https://echo.htmlacademy.ru">
-            <fieldset>
-                <legend>Стоимость:</legend>
+            <fieldset class="filters-set">
+                <legend class="filters-name">Стоимость:</legend>
                 <div class="price-range">
                     <span class="button"></span>
                     <span class="button"></span>
@@ -41,9 +42,9 @@
                     <input type="number" id="price-max" name="price-max" value placeholder="15000">
                 </p>
             </fieldset>
-            <fieldset>
-                <legend>Сетка:</legend>
-                <ul class ="grid">
+            <fieldset class="filters-set">
+                <legend class="filters-name">Сетка:</legend>
+                <ul class="catalog grid">
                     <li>
                         <input type="radio" name="grid-type" value="adaptive" id="grid-adaptive" checked>
                         <label for="grid-adaptive">
@@ -64,9 +65,9 @@
                     </li>
                 </ul>
             </fieldset>
-            <fieldset>
-                <legend>Особенности:</legend>
-                <ul class="features">
+            <fieldset class="filters-set">
+                <legend class="filters-name">Особенности:</legend>
+                <ul class="catalog features">
                     <li>
                         <input type="checkbox" name="slider" id="features-slider" checked>
                         <label for="features-slider">
@@ -105,7 +106,7 @@
         <section class="catalog">
             <h2 class="visually-hidden">Список проектов</h2>
             <h3 class="sort-title">Сортировать:</h3>
-            <ul class="sort">
+            <ul class="catalog sort">
                 <li><a href="#">По цене</a></li>
                 <li><a href="#">По типу</a></li>
                 <li><a href="#">По названию</a></li>
@@ -117,36 +118,61 @@
                     <p class="catalog-item-image">
                         <a href="#"><img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona"></a>
                     </p>
-                    <div class="catalog-hover">
+                    <div class="info-block">
                         <h3>Sedona</h3>
                         <p>Информационный сайт для туристов</p>
-                        <a class="button-hover" href="basket.html">9 900 руб.</a>
+                        <a class="catalog-button" href="basket.html">9 900 руб.</a>
                     </div>
                 </li>
                 <li class="catalog-item" aria-label="Пинк">
                     <p class="catalog-item-image">
                         <a href="#"><img src="img/img-pink.jpg" width="360" height="576" alt="Pink"></a>
                     </p>
+                    <div class="info-block">
+                        <h3>Pink app</h3>
+                        <p>Продуктовый лендинг приложения для iOS и Android</p>
+                        <a class="catalog-button" href="basket.html">9 900 руб.</a>
+                    </div>
                 </li>
                 <li class="catalog-item" aria-label="Барбершоп Бородинский">
                     <p class="catalog-item-image">
                         <a href="#"><img src="img/img-barbershop.jpg" width="360" height="576" alt="Borodinsky"></a>
                     </p>
+                    <div class="info-block">
+                        <h3>Barbershop</h3>
+                        <p>Сайт салона красоты. Для мужчин, да.</p>
+                        <a class="catalog-button" href="basket.html">9 900 руб.</a>
+                    </div>
                 </li>
                 <li class="catalog-item" aria-label="Мишка">
                     <p class="catalog-item-image">
                         <a href="#"><img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka"></a>
                     </p>
+                    <div class="info-block">
+                        <h3>Mishka</h3>
+                        <p>Интернет-магазин вязаных игрушек.</p>
+                        <a class="catalog-button" href="basket.html">9 900 руб.</a>
+                    </div>
                 </li>
                 <li class="catalog-item" aria-label="А плюс">
                     <p class="catalog-item-image">
                         <a href="#"><img src="img/img-aplus.jpg" width="360" height="576" alt="Aplus"></a>
                     </p>
+                    <div class="info-block">
+                        <h3>A plus</h3>
+                        <p>Лендинг курсов повышения квалификации.</p>
+                        <a class="catalog-button" href="basket.html">9 900 руб.</a>
+                    </div>
                 </li>
                 <li class="catalog-item" aria-label="Крафтовый квас">
                     <p class="catalog-item-image">
                         <a href="#"><img src="img/img-kvast.jpg" width="360" height="576" alt="Kvast"></a>
                     </p>
+                    <div class="info-block">
+                        <h3>Кваст</h3>
+                        <p>Промо-сайт производителя крафтового кваса.</p>
+                        <a class="catalog-button" href="basket.html">9 900 руб.</a>
+                    </div>
                 </li>
             </ul>
             <ul class="pagination-list" aria-label="Список страниц">
@@ -171,7 +197,7 @@
         <div class="footer-social">
             <p><b>Давайте дружить, это выгодно!</b></p>
             <p>Скидка 10% для друзей из социальных сетей.</p>
-            <ul>
+            <ul class="list-social">
                 <li>
                     <a class="social-button" href="https://vk.com/" aria-label="Вконтакте"></a>
                 </li>
