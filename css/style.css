@@ -7,195 +7,200 @@ body {
      font-weight: 400;
      color: #333333;
 }
- a {
+a {
      text-decoration: none;
 }
- .main-header,
- .catalog-header {
-     background-image: url(../img/grey-back.png);
-}
- .main-navigation {
+.main-navigation {
      line-height: 30px;
      font-weight: 500;
      text-transform: uppercase;
      background-color: #eeeeee;
 }
- .main-header-logo img:hover {
+.main-header-logo img:hover {
      opacity: 0.8;
 }
- .main-header-logo img:active {
+.main-header-logo img:active {
      opacity: 0.3;
 }
- .site-navigation {
+.site-navigation {
      list-style: none;
 }
 .site-navigation a {
-     color: black;
+     color: #000000;
 }
- .site-navigation a:hover {
+.site-navigation a:hover {
      color: #ff6666;
 }
- .site-navigation a:focus {
+.site-navigation a:focus {
      opacity: 0.3;
 }
- .site-navigation a:active {
+.site-navigation a:active {
      color: black;
      border-bottom: 2px solid #ff6666;
 }
-
- .basket {
+.basket {
      list-style: none;
      line-height: 30px;
      font-weight: 500;
      text-transform: uppercase;
      background-color: #eeeeee;
 }
- .basket a {
-     color: black;
+.basket a {
+     color: #000000;
 }
- .basket::before {
-     content: url(../img/cart-icon.svg);
+.basket::before {
+     content: "";
+     width: 15px;
+     height: 15px;
+     display: block;
+     background-image: url(../img/cart-icon.svg);
+
 }
- .basket a:hover {
+.basket a:hover {
      color: #ff6666;
 }
- .basket a:focus {
+.basket a:focus {
      opacity: 0.3%;
 }
 .basket a:active {
-     color: black;
+     color: #000000;
      border-bottom: 2px solid #ff6666;
 }
- .slogan-main {
+.slogan-main {
      font-size: 55px;
      line-height: 55px;
      text-align: left;
      font-weight: 500;
-     color: black;
+     color: #000000;
 }
- .services-item {
+.services-item {
      list-style: none;
 }
- .button {
+.button {
      line-height: 18px;
      text-align: center;
-     color: white;
+     color: #ffffff;
      vertical-align: middle;
      text-transform: uppercase;
      font-weight: 500;
      background-color: #ff6666;
      border: none;
 }
- .button:hover {
+.button:hover {
      background-color: #ff3333;
 }
- .button:focus {
+.button:focus {
      background-color: #cc3333;
      color: #cc9999;
      box-shadow: inset 1px 1px 0 #fff;
 }
- .button.second {
+.button.second {
      background-color: #00cc66;
 }
- .button.second:hover {
+.button.second:hover {
      background-color: #339966;
 }
- .button.second:focus {
+.button.second:focus {
      background-color: #009966;
      color: #66cc99;
      box-shadow: inset 1px 1px 0 #fff;
 }
- .button.third {
+.button.third {
      background-color: #ffcc33;
 }
- .button.third:hover {
+.button.third:hover {
      background-color: #eab534;
 }
- .button.third:focus {
+.button.third:focus {
      background-color: #cc9933;
      color: #ffcc66;
      box-shadow: inset 1px 1px 0 #fff;
 }
- .first-slide {
+
+.slogan {
+     list-style: none;
+}
+
+.slogan:nth-child(1) {
      background-image: url(../img/slide1.png);
      background-position: right;
      background-repeat: no-repeat;
 }
- .second-slide {
+.slogan:nth-child(2) {
      background-image: url(../img/slide2.png);
      background-position: right;
      background-repeat: no-repeat;
 }
- .third-slide {
+.slogan:nth-child(3) {
      background-image: url(../img/slide3.png);
      background-position: right;
      background-repeat: no-repeat;
 }
- .services-item h3 {
+.services-item h3 {
      font-size: 24px;
      line-height: 30px;
      text-transform: uppercase;
      text-align: left;
      font-weight: 700;
-     color: black;
+     color: #000000;
 }
- .features-large {
+.features-large {
      font-size: 45px;
      line-height: 45px;
      font-weight: 500;
-     color: black;
+     color: #000000;
 }
- .features-small {
+.features-small {
      font-size: 16px;
      line-height: 24px;
      text-transform: uppercase;
      text-align: left;
      font-weight: 700;
-     color: black;
+     color: #000000;
 }
- .features-list {
+.features-list {
      list-style-type: none;
 }
- .features-list::before {
+.features-list::before {
      content: "— ";
      color: #ff6666;
 }
- .numbers {
+.numbers {
      font-size: 45px;
      line-height: 10.06px;
      font-weight: 700;
-     color: black;
+     color: #000000;
 }
- .projects {
+.projects {
      opacity: 0.2;
 }
- .projects:hover {
+.projects:hover {
      opacity: 1;
 }
- .projects:active {
+.projects:active {
      opacity: 0.1;
 }
- .address p {
+.address p {
      color: #666666;
 }
- .phone {
+.phone {
      color: #666666;
      text-decoration: none;
 }
- .address h3 {
+.address h3 {
      font-size: 18px;
      line-height: 30px;
      text-transform: uppercase;
      text-align: left;
      font-weight: 700;
-     color: black;
+     color: #000000;
 }
- .friendship-large {
+.friendship-large {
      font-size: 36px;
      line-height: 36px;
      font-weight: 700;
 }
- .friendship-small {
+.friendship-small {
      line-height: 22px;
 }
 /* Модальное окно "Напишите нам" */
@@ -204,139 +209,138 @@ body {
      line-height: 45px;
      font-weight: 500;
 }
- label {
+label {
      font-size: 16px;
      line-height: 18px;
      font-weight: 700;
 }
- .placeholder {
+.placeholder {
      font: inherit;
      opacity: 0.5;
 }
- .name input,
- .message textarea {
+.name input,
+.message textarea {
   border: 3px solid grey;
 }
- .modal-close {
+.modal-close {
      width: 21px;
      height: 21px;
      background: url(../img/close-cross.svg);
 }
- .list-social {
+.list-social {
      list-style: none;
 }
 /* Каталог*/
- .catalog-navigation {
+.catalog-navigation {
      line-height: 30px;
      font-weight: 500;
      text-transform: uppercase;
      background-color: #eeeeee;
 }
- .catalog-site-navigation {
+.catalog-site-navigation {
      list-style: none;
 }
-
 .catalog-site-navigation a {
-     color: black;
+     color: #000000;
 }
- fieldset {
+fieldset {
      font: inherit;
      border: none;
 }
- legend {
+legend {
      font-size: 18px;
      line-height: 30px;
      font-weight: 700;
      text-transform: uppercase;
 }
- .grid, .features, .sort {
+.catalog {
      list-style: none;
      color: #333333;
 }
- .sort-title {
+.sort-title {
      font-size: 18px;
      line-height: 18px;
      font-weight: 700;
      text-transform: uppercase;
 }
- .sort a {
-     color:black;
+.sort a {
+     color:#000000;
      text-decoration: none;
      font-size: 14px;
      line-height: 18px;
      text-transform: uppercase;
      opacity: 0.3;
 }
- .sort a:hover {
+.sort a:hover {
      opacity: 0.6;
 }
- .sort a:focus {
+.sort a:focus {
      opacity: 1;
 }
- a.arrow {
+a.arrow {
      display: inline-block;
      margin: 0 10px;
      font-size: 0;
 }
- .arrow-up::before {
+.arrow-up::before {
      content: url(../img/icon-up-dir.svg);
 }
- .arrow-down::before {
+.arrow-down::before {
      content: url(../img/icon-down-dir.svg);
 }
- .catalog-list {
+.catalog-list {
      list-style: none;
 }
- .sedona-hover h3 {
+.catalog-button h3 {
      font-size: 18px;
      line-height: 30x;
      text-transform: uppercase;
      font-weight: bold;
 }
- .button-hover {
+.catalog-button {
      line-height: 18px;
      text-align: center;
-     color: white;
+     color: #ffffff;
      vertical-align: middle;
      text-transform: uppercase;
      font-weight: 500;
      background-color: #ff6666;
      border: none;
 }
- .button-hover:hover {
+.catalog-button:hover {
      background-color: #ff3333;
 }
- .button-hover:focus {
+.catalog-button:focus {
      background-color: #d7373b;
 }
- .pagination-list {
+.pagination-list {
      list-style: none;
 }
- .pagination-item a {
+.pagination-item a {
      background-color: #eeeeee;
      text-decoration: none;
-     color: black;
+     color: #000000;
      text-transform: uppercase;
 }
- .pagination-item a:hover {
+.pagination-item a:hover {
      background-color: #dfdfdf;
 }
- .pagination-item a:focus {
+.pagination-item a:focus {
      background-color: #d5d5d5;
      opacity: 0.3;
 }
- .pagination-item a:active {
-     color: black;
+.pagination-item a:active {
+     color: #000000;
      background-color: #cccccc;
      opacity: 0.3;
 }
- .pagination-item-current a {
-     color: black;
+.pagination-item-current a {
+     color: #000000;
      border:3px solid #dbdbdb;
      background-color: #ffffff;
 }
 /* Дополнительно*/
- .visually-hidden {
+.visually-hidden {
      position: absolute;
      clip: rect(0 0 0 0);
      width: 1px;
