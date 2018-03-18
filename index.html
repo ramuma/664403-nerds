@@ -15,7 +15,7 @@
         </div>
         <nav class="main-navigation" aria-label="Навигация сайта">
             <ul class="site-navigation">
-                <li><a>Студия</a></li>
+                <li><a class="current">Студия</a></li>
                 <li><a href="clients.html">Клиенты</a></li>
                 <li><a href="catalog.html">Магазин</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
@@ -39,12 +39,12 @@
                 <li class="slogan">
                     <p class="slogan-main"><b>Любим математику как никто другой</b></p>
                     <p class="slogan-small">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-                    <a class="button second" href="#">Узнать больше</a>
+                    <a class="button green" href="#">Узнать больше</a>
                 </li>
                 <li class="slogan">
                     <p class="slogan-main"><b>Только ночь, только хардкор</b></p>
                     <p class="slogan-small">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-                    <a class="button third" href="#">Узнать больше</a>
+                    <a class="button yellow" href="#">Узнать больше</a>
                 </li>
             </ul>
             <div class="slider">
@@ -162,19 +162,21 @@
     <section class="modal contact-us">
         <h2>Напишите нам</h2>
         <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
-            <p>
-                <label for="name">Ваше имя:</label>
-                <input type="text" class="form-field" id="name" name="contact-name" placeholder="Имя Фамилия">
-            </p>
-            <p>
-                <label for="email">Ваш e-mail:</label>
-                <input type="email" class="form-field" id="email" name="email" placeholder="email@example.com">
-            </p>
-            <p>
-                <label for="message">Текст письма:</label>
-                <textarea id="message" class="form-field" name="message" placeholder="В свободной форме"></textarea>
-            </p>
-            <button class="button" type="submit">Отправить</button>
+            <fieldset class="form-field">
+                <p>
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" name="contact-name" placeholder="Имя Фамилия">
+                </p>
+                <p>
+                    <label for="email">Ваш e-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="email@example.com">
+                </p>
+                <p>
+                    <label for="message">Текст письма:</label>
+                    <textarea id="message" name="message" placeholder="В свободной форме"></textarea>
+                </p>
+                <button class="button" type="submit">Отправить</button>
+            </fieldset>
         </form>
         <button class="modal-close" type="button" name="close" aria-label="Закрыть окно"></button>
     </section>

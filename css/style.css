@@ -39,13 +39,15 @@ a {
     color: #ff6666;
 }
 
-.site-navigation a:focus {
+.site-navigation a:active {
+    color: #000000;
     opacity: 0.3;
 }
 
-.site-navigation a:active {
+.current {
     color: black;
     border-bottom: 2px solid #ff6666;
+    padding-bottom: 5px;
 }
 
 .basket {
@@ -73,7 +75,7 @@ a {
 }
 
 .basket a:focus {
-    opacity: 0.3%;
+    opacity: 0.3;
 }
 
 .basket a:active {
@@ -114,29 +116,29 @@ a {
     box-shadow: inset 1px 1px 0 #fff;
 }
 
-.button.second {
+.button.green {
     background-color: #00cc66;
 }
 
-.button.second:hover {
+.button.green:hover {
     background-color: #339966;
 }
 
-.button.second:focus {
+.button.green:focus {
     background-color: #009966;
     color: #66cc99;
     box-shadow: inset 1px 1px 0 #fff;
 }
 
-.button.third {
+.button.yellow {
     background-color: #ffcc33;
 }
 
-.button.third:hover {
+.button.yellow:hover {
     background-color: #eab534;
 }
 
-.button.third:focus {
+.button.yellow:focus {
     background-color: #cc9933;
     color: #ffcc66;
     box-shadow: inset 1px 1px 0 #fff;
@@ -255,22 +257,26 @@ a {
     font-weight: 500;
 }
 
-label[for="name"],
-label[for="email"],
-label[for="message"] {
+.contact-form label {
     font-size: 16px;
     line-height: 18px;
     font-weight: 700;
 }
 
-.form-field input::-webkit-input-placeholder {
+.form-field {
+  border: none;
+}
+
+.form-field input,
+.form-field textarea::-webkit-input-placeholder {
     font-size: 16px;
     line-height: 18px;
     font-weight: 300;
     opacity: 0.5;
 } 
 
-.form-field input::-ms-input-placeholder {
+.form-field input,
+.form-field textarea::-ms-input-placeholder {
     font-size: 16px;
     line-height: 18px;
     font-weight: 300;
@@ -279,7 +285,23 @@ label[for="message"] {
 
 .form-field input,
 .form-field textarea {
-    border: 3px solid #cccccc;
+    border: 2px solid #cccccc;
+}
+
+.form-field input:hover,
+.form-field textarea:hover {
+  opacity: 0.3;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  border-color: #000000;
+}
+
+.form-field input:invalid,
+.form-field textarea:invalid {
+  border-color: #ff3333;
+  color: #ff3333;
 }
 
 .modal-close {
@@ -295,7 +317,7 @@ label[for="message"] {
      opacity: 1;
 }
 
-.modal-close:active{
+.modal-close:active {
      opacity: 0.1;
 }
 
@@ -310,27 +332,6 @@ label[for="message"] {
     font-weight: 500;
     text-transform: uppercase;
     background-color: #eeeeee;
-}
-
-.catalog-site-navigation {
-    list-style: none;
-}
-
-.catalog-site-navigation a {
-    color: #000000;
-}
-
-.catalog-site-navigation a:hover {
-    color: #ff6666;
-}
-
-.catalog-site-navigation a:focus {
-    opacity: 0.3;
-}
-
-.catalog-site-navigation a:active {
-    color: black;
-    border-bottom: 2px solid #ff6666;
 }
 
 .filters-set {
@@ -375,12 +376,14 @@ label[for="message"] {
 
 .arrow.arrow-down {
     display: inline-block;
+    vertical-align: middle;
     margin: 0 10px;
     font-size: 0;
 }
 
 .arrow.arrow-up {
     display: inline-block;
+    vertical-align: middle;
     margin: 0 10px;
     font-size: 0;
 }
