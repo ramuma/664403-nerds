@@ -215,21 +215,19 @@
     <section class="modal contact-us">
         <h2>Напишите нам</h2>
         <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="form-field">
                 <p>
                     <label for="name">Ваше имя:</label>
-                    <input type="text" id="name" name="contact-name" placeholder="Имя Фамилия">
+                    <input class="form-field" type="text" id="name" name="contact-name" placeholder="Имя Фамилия">
                 </p>
                 <p>
                     <label for="email">Ваш e-mail:</label>
-                    <input type="email" id="email" name="email" placeholder="email@example.com">
+                    <input class="form-field" type="email" id="email" name="email" placeholder="email@example.com">
                 </p>
                 <p>
                     <label for="message">Текст письма:</label>
-                    <textarea id="message" name="message" placeholder="В свободной форме"></textarea>
+                    <textarea class="form-field" id="message" name="message" placeholder="В свободной форме"></textarea>
                 </p>
                 <button class="button" type="submit">Отправить</button>
-            </fieldset>
         </form>
         <button class="modal-close" type="button" name="close" aria-label="Закрыть окно"></button>
     </section>

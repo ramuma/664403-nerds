@@ -7,15 +7,17 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/outline.css" rel="stylesheet">
 </head>
 
 <body>
     <header class="main-header">
+        <div class="navigation-wrapper">
         <div class="main-header-logo" aria-label="Логотип компании"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
         </div>
         <nav class="main-navigation" aria-label="Навигация сайта">
             <ul class="site-navigation">
-                <li><a class="current">Студия</a></li>
+                <li><a>Студия</a></li>
                 <li><a href="clients.html">Клиенты</a></li>
                 <li><a href="catalog.html">Магазин</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
@@ -23,6 +25,7 @@
         </nav>
         <div class="basket"><a href="basket.html">Корзина</a>
         </div>
+    </div>
 
     </header>
 
@@ -162,21 +165,19 @@
     <section class="modal contact-us">
         <h2>Напишите нам</h2>
         <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="form-field">
                 <p>
                     <label for="name">Ваше имя:</label>
-                    <input type="text" id="name" name="contact-name" placeholder="Имя Фамилия">
+                    <input class="form-field" type="text" id="name" name="contact-name" placeholder="Имя Фамилия">
                 </p>
                 <p>
                     <label for="email">Ваш e-mail:</label>
-                    <input type="email" id="email" name="email" placeholder="email@example.com">
+                    <input class="form-field" type="email" id="email" name="email" placeholder="email@example.com">
                 </p>
                 <p>
                     <label for="message">Текст письма:</label>
-                    <textarea id="message" name="message" placeholder="В свободной форме"></textarea>
+                    <textarea class="form-field" id="message" name="message" placeholder="В свободной форме"></textarea>
                 </p>
                 <button class="button" type="submit">Отправить</button>
-            </fieldset>
         </form>
         <button class="modal-close" type="button" name="close" aria-label="Закрыть окно"></button>
     </section>
