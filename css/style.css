@@ -9,11 +9,6 @@ body {
 }
 /* ----- Сеточные стили ----- */
  .main-header {
-     display: flex;
-     background-color: #eeeeee;
-     margin-bottom: 0;
-}
-.navigation-wrapper {
      width: 100%;
      background-color: #eeeeee;
      display: flex;
@@ -136,16 +131,17 @@ body {
 }
  .contacts {
      width: 100%;
+     position: relative;
 }
  .map {
      min-height: 416px;
 }
- .address, .address-catalog {
+ .address {
      width: 319px;
      min-height: 309px;
      background-color: white;
      position: absolute;
-     top: 1896px;
+     top: 56px;
      left: 140px;
      padding: 53px 50px 49px;
      display: flex;
@@ -153,12 +149,14 @@ body {
      justify-content: center;
      box-sizing: border-box;
 }
- .address h3, .address-catalog h3 {
+ .address h3 {
      margin: 0;
 }
  .button.write {
-     padding: 6px 47px 6px 50px;
+     padding: 15px 0 15px 0;
      margin-top: 33px;
+     width: 212px;
+     text-align: center;
 }
  .main-footer {
      width: 100% 
@@ -197,11 +195,6 @@ body {
 }
 /*Позиционирование каталог*/
  .catalog-header {
-     display: flex;
-     background-color: #eeeeee;
-     margin-bottom: 0;
-}
- .navigation-wrapper {
      width: 100%;
      background-color: #eeeeee;
      display: flex;
@@ -227,7 +220,6 @@ body {
      max-width: 120px;
      padding: 0;
      margin-top: 26px;
-     position: relative;
 }
  .catalog-title {
      width: 100%;
@@ -288,6 +280,9 @@ body {
  .catalog-item-image {
      margin-bottom: 37px;
      width: 360px;
+}
+ .info-block {
+     display: none;
 }
  .pagination-list {
      margin: 0;
@@ -489,13 +484,13 @@ body {
      font-weight: 700;
      color: #000000;
 }
- .projects {
+ .projects-list li {
      opacity: 0.2;
 }
- .projects:hover {
+ .projects-list li:hover {
      opacity: 1;
 }
- .projects:active {
+ .projects-list li:active {
      opacity: 0.1;
 }
  .address p, .address-catalog p {
@@ -523,6 +518,9 @@ body {
      line-height: 22px;
 }
 /* Модальное окно "Напишите нам" */
+ .modal {
+     display: none;
+}
  .contact-us h2 {
      font-size: 45px;
      line-height: 45px;
@@ -707,3 +705,4 @@ body {
      height: 1px;
      margin: -1px;
 }
+ 
