@@ -145,10 +145,6 @@ body {
   border-radius: 50%;
 }
 
-
-
-
-
  .services {
      width: 1160px;
      min-height: 430px;
@@ -207,9 +203,10 @@ body {
      min-height: 138px;
      display: flex;
      justify-content: space-around;
-     align-items: center;
+     align-items: baseline;
      border-bottom: 2px solid #eeeeee;
      margin-bottom: 82px;
+     border-top: 2px solid #eeeeee;
 }
  .contacts {
      width: 100%;
