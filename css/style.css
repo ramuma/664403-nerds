@@ -328,10 +328,13 @@ body {
  .site-navigation a {
      color: #000000;
 }
- .site-navigation a:hover {
+ .site-navigation a:hover,
+ .basket a:hover 
+{
      color: #ff6666;
 }
- .site-navigation a:active {
+ .site-navigation a:active,
+ .basket a:active  {
      color: #000000;
      opacity: 0.3;
 }
@@ -358,16 +361,7 @@ body {
      background-repeat: no-repeat;
      margin-right: 20px;
 }
- .basket a:hover {
-     color: #ff6666;
-}
- .basket a:focus {
-     opacity: 0.3;
-}
- .basket a:active {
-     color: #000000;
-     border-bottom: 2px solid #ff6666;
-}
+
  .slogan-main {
      font-size: 55px;
      line-height: 55px;
