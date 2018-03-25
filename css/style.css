@@ -25,6 +25,8 @@ body {
      margin: 0 auto;
      margin-top: 48px;
      margin-bottom: 20px;
+     padding-left: 20px;
+     padding-right: 20px;
      justify-content: space-between;
 }
  .main-header img:hover {
@@ -90,6 +92,8 @@ body {
      width: 1160px;
      margin: 0 auto;
      padding: 0;
+     padding-right: 20px;
+     padding-left: 20px;
      position: relative;
 }
  .slider-controls {
@@ -197,6 +201,8 @@ body {
      min-height: 430px;
      margin: 0 auto 39px auto;
      border-bottom: 2px solid #eeeeee;
+     padding-right: 20px;
+     padding-left: 20px;
 }
  .services-item {
      list-style: none;
@@ -276,6 +282,8 @@ body {
      align-content: space-between;
      width: 1160px;
      margin: auto;
+     padding-right: 20px;
+     padding-left: 20px;
 }
 /*ОСОБЕННОСТИ*/
  .features {
@@ -350,6 +358,8 @@ body {
      border-bottom: 2px solid #eeeeee;
      margin-bottom: 82px;
      border-top: 2px solid #eeeeee;
+     padding-right: 20px;
+     padding-left: 20px;
 }
  .projects-list li {
      opacity: 0.2;
@@ -415,6 +425,8 @@ body {
      justify-content: flex-start;
      align-items: flex-start;
      margin: 70px auto;
+     padding-right: 20px;
+     padding-left: 20px;
 }
  .list-social {
      min-width: 260px;
@@ -540,10 +552,14 @@ body {
      margin: 0 auto;
      margin-top: 48px;
      margin-bottom: 20px;
+     padding-right: 20px;
+     padding-left: 20px;
      justify-content: space-between;
 }
  .site-navigation {
      padding: 0;
+     padding-right: 20px;
+     padding-left: 20px;
      margin: 26px 0 0 0;
      width: 440px;
      display: flex;
@@ -565,6 +581,10 @@ body {
 }
  .filters-set {
      border: none;
+     margin: 0;
+     padding: 0;
+     padding-right: 20px;
+     padding-left: 20px;
 }
  .filters-name {
      font-size: 18px;
@@ -586,6 +606,8 @@ body {
      font-weight: 700;
      text-transform: uppercase;
      margin: 0;
+     padding: 0;
+     
 }
  .sort a {
      color: #000000;
