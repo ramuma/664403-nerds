@@ -35,7 +35,7 @@ body {
  .main-header img:active {
      opacity: 0.3;
 }
- .site-navigation {
+ .site-navigation ul {
      list-style: none;
      padding: 0;
      margin: 26px 0 0 0;
@@ -164,13 +164,13 @@ body {
      text-align: left;
      font-weight: 500;
      color: #000000;
-     margin-bottom: 25px;
+     margin-bottom: 28px;
 }
  .slogan-small {
      /*padding-bottom: 42px;*/
      max-width: 430px;
      margin: 0;
-     margin-bottom: 38px;
+     margin-bottom: 40px;
 }
  .slogan-list {
      padding: 0;
@@ -473,6 +473,7 @@ body {
 /* Модальное окно "Напишите нам" */
 
  .modal {
+     position: fixed;
      display: none;
 }
  .contact-us h2 {
@@ -592,14 +593,7 @@ body {
      font-weight: 700;
      text-transform: uppercase;
 }
- .sort-container {
-     padding: 0;
-     margin: 0;
-     margin-bottom: 40px;
-     display: flex;
-     width: 760px;
-     padding-top: 59px;
-}
+ 
  .sort-title {
      font-size: 18px;
      line-height: 18px;
@@ -659,13 +653,16 @@ body {
      display: flex;
      justify-content: center;
      align-content: center;
-     padding-top: 20px;
-     padding-bottom: 75px;
+     padding-top: 45px;
+     padding-bottom: 110px;
+     margin-bottom: 60px;
 }
  .catalog-title h1 {
      font-size: 55px;
      font-weight: 500;
      line-height: 55px;
+     margin: 0;
+     padding: 0;
 }
  .catalog-container {
      width: 1160px;
