@@ -698,6 +698,10 @@ body {
      margin-bottom: 33px;
      line-height: 0;
 }
+.catalog-item img {
+     width: 360px;
+     height: 576px;
+}
  .catalog-item::before {
      content: "";
      display: block;
