@@ -25,9 +25,10 @@ body {
      margin: 0 auto;
      margin-top: 48px;
      margin-bottom: 20px;
-     padding-left: 20px;
-     padding-right: 20px;
+     padding-left: auto;
+     padding-right: auto;
      justify-content: space-between;
+     flex-wrap: wrap;
 }
  .main-header img:hover {
      opacity: 0.8;
@@ -41,11 +42,13 @@ body {
      margin: 26px 0 0 0;
      width: 440px;
      display: flex;
-     list-style-type: none;
-     justify-content: space-between;
+     list-style: none;
+     justify-content: flex-start;
 }
  .site-navigation a {
      color: #000000;
+     padding: 0;
+     margin: 0;
 }
  .site-navigation a:hover, .basket a:hover {
      color: #ff6666;
@@ -67,7 +70,6 @@ body {
      max-width: 120px;
      padding: 0;
      margin-top: 26px;
-     position: relative;
 }
  .basket a {
      color: #000000;
@@ -81,6 +83,7 @@ body {
      background-repeat: no-repeat;
      margin-right: 20px;
 }
+
 /*СЛАЙДЕР*/
  .slider-background {
      width: 100%;
@@ -167,7 +170,6 @@ body {
      margin-bottom: 28px;
 }
  .slogan-small {
-     /*padding-bottom: 42px;*/
      max-width: 430px;
      margin: 0;
      margin-bottom: 40px;
@@ -182,7 +184,7 @@ body {
 }
  .slogan:nth-child(1) {
      background-image: url(../img/slide1.png);
-     background-position: 93% 18px;
+     background-position: 94% 0;
      background-repeat: no-repeat;
 }
  .slogan:nth-child(2) {
@@ -199,13 +201,17 @@ body {
  .services {
      width: 1160px;
      min-height: 430px;
-     margin: 0 auto 39px auto;
+     margin: 0 auto 32px auto;
      border-bottom: 2px solid #eeeeee;
      padding-right: 20px;
      padding-left: 20px;
 }
  .services-item {
      list-style: none;
+}
+
+.services-item img {
+margin-bottom: 16px;
 }
  .services-list {
      display: flex;
@@ -220,6 +226,7 @@ body {
 }
  .services-item p {
      width: 260px;
+     margin-bottom: 34px;
 }
  .services-item h3 {
      font-size: 24px;
@@ -228,6 +235,7 @@ body {
      text-align: left;
      font-weight: 700;
      color: #000000;
+     margin: 0;
 }
  .button {
      display: inline-block;
@@ -297,6 +305,10 @@ body {
      line-height: 45px;
      font-weight: 500;
      color: #000000;
+     margin: 0;
+     margin-top: 35px;
+     margin-bottom: 15px;
+     padding: 0;
 }
  .features-small {
      font-size: 16px;
@@ -305,12 +317,19 @@ body {
      text-align: left;
      font-weight: 700;
      color: #000000;
+     margin: 0;
+     margin-top: 25px;
+     padding: 0;
 }
  .features-list {
      list-style-type: none;
 }
+.features-list ul {
+     margin: 0;
+     padding: 0;
+}
  .features-list li {
-     padding-bottom: 16px;
+     padding-bottom: 30px;
      position: relative;
 }
  .features-list li::before {
@@ -339,11 +358,22 @@ body {
  .features-numbers {
      display: flex;
      flex-direction: column;
-     width: 400px;
-     margin: auto;
+     /*width: 400px;
+     margin: auto;*/
+     margin-left: auto;
+     align-items: flex-end;
 }
- .features-numbers img {
-     margin-bottom: 35px;
+ /*.features-numbers img {
+     margin-bottom: 35px;*/
+.features-numbers::before {
+  content: "";
+
+  display: inline-block;
+  width: 360px;
+  height: 210px;
+  margin-left: auto;
+
+  background: url(../img/nerds-illustration.png) no-repeat 100% 0;
 }
 /*ПАРТНЕРЫ*/
  .projects-list {
@@ -369,6 +399,23 @@ body {
 }
  .projects-list li:active {
      opacity: 0.1;
+}
+.projects-list li {
+     position: relative;
+}
+
+.projects-list li::after {
+  content: "";
+
+  display: block;
+  width: 2px;
+  height: 52px;
+  position: absolute;
+  right: 100px;
+  top: 18px;
+  z-index: 1;
+
+  background-color: #eeeeee;
 }
 /*КОНТАКТЫ*/
  .contacts {
@@ -413,7 +460,7 @@ body {
  .button.write {
      padding: 15px 0 15px 0;
      margin-top: 33px;
-     width: 212px;
+     width: 220px;
      text-align: center;
 }
  .main-footer {
