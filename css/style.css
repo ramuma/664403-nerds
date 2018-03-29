@@ -73,7 +73,7 @@ a {
     max-width: 120px;
     padding: 0;
     margin-top: 26px;
-    margin-left: 248px;
+    margin-left: 246px;
 }
 .basket a {
     color: #000000;
@@ -83,9 +83,10 @@ a {
     width: 15px;
     height: 15px;
     display: inline-block;
+    vertical-align: middle;
     background-image: url(../img/cart-icon.svg);
     background-repeat: no-repeat;
-    margin-right: 20px;
+    margin-right: 24px;
 }
 .slider-background {
     width: 100%;
@@ -132,16 +133,18 @@ a {
     background: #ffffff;
     border-radius: 50%;
 }
-#slide1: checked~.slogan-list .slogan:nth-child(1) {
+#slide1:checked~.slogan-list .slogan:nth-child(1) {
     display: block;
 }
-#slide2: checked~.slider-list .slider-item:nth-child(2) {
+#slide2:checked~.slogan-list .slogan:nth-child(2) {
     display: block;
 }
-#slide3: checked~.slider-list .slider-item:nth-child(3) {
+#slide3:checked~.slogan-list .slogan:nth-child(3) {
     display: block;
 }
-#slide1: checked~.slider-controls .slider-controls-item--1::before,#slide2: checked~.slider-controls .slider-controls-item--2::before,#slide3: checked~.slider-controls .slider-controls-item--3::before {
+#slide1:checked~.slider-controls .slider-controls-item--1::before,
+#slide2:checked~.slider-controls .slider-controls-item--2::before,
+#slide3:checked~.slider-controls .slider-controls-item--3::before {
     content: "";
     position: absolute;
     left: 50%;
@@ -204,8 +207,8 @@ a {
     min-height: 430px;
     margin: 0 auto 32px auto;
     border-bottom: 2px solid #eeeeee;
-    padding-right: 20px;
-    padding-left: 20px;
+    /*padding-right: 20px;
+    padding-left: 20px;*/
 }
 .services-item {
     list-style: none;
@@ -330,7 +333,7 @@ a {
     padding: 0;
 }
 .features-list li {
-    padding-bottom: 25px;
+    padding-bottom: 23px;
     position: relative;
 }
 .features-list li::before {
@@ -400,8 +403,6 @@ a {
 }
 .projects {
     width: 1160px;
-    padding-left: 20px;
-    padding-right: 20px;
     margin: 0 auto;
     margin-bottom: 80px;
     border-bottom: 2px solid #eeeeee;
@@ -448,7 +449,9 @@ a {
     padding-top: 65px;
     padding-bottom: 63px;
 }
-.projects .htmlacademy::after,.projects .borodinskiy::after,.projects .pink::after {
+.projects .htmlacademy::after,
+.projects .borodinskiy::after,
+.projects .pink::after {
     content: "";
     display: block;
     width: 2px;
@@ -470,6 +473,7 @@ a {
 }
 .map {
     min-height: 416px;
+    overflow: hidden;
 }
 .address {
     width: 319px;
@@ -759,11 +763,24 @@ a {
     top: 0px;
     background: url(../img/radio-on.svg) no-repeat;
 }
-.checkbox:focus+label,.checkbox:focus+label::before,.checkbox:focus+label::after,.radio:focus+label,.radio:focus+label::before,.radio:focus+label::after,.filters-set label:hover,.filters-set label:hover::before,.filters-set label:hover::after {
+.checkbox:focus+label,
+.checkbox:focus+label::before,
+.checkbox:focus+label::after,
+.radio:focus+label,
+.radio:focus+label::before,
+.radio:focus+label::after,
+.filters-set label:hover,
+.filters-set label:hover::before,
+.filters-set label:hover::after {
     opacity: 1;
     color: #000000;
 }
-.checkbox: disabled+label,.checkbox: disabled+label::before,.checkbox: disabled+label::after,.radio: disabled+label,.radio: disabled+label::before,.radio: disabled+label::after {
+.checkbox: disabled+label,
+.checkbox: disabled+label::before,
+.checkbox: disabled+label::after,
+.radio: disabled+label,
+.radio: disabled+label::before,
+.radio: disabled+label::after {
     opacity: 0.3;
 }
 .checkbox+label::before {
@@ -775,7 +792,7 @@ a {
     top: 0;
     background: url(../img/checkbox-off.svg) no-repeat;
 }
-.checkbox: checked+label::before {
+.checkbox:checked+label::before {
     content: "";
     position: absolute;
     width: 25px;
