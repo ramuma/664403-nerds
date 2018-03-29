@@ -116,20 +116,24 @@
 
             <section class="catalog">
                 <h2 class="visually-hidden">Список проектов</h2>
-                <h3 class="sort-title">Сортировать:</h3>
-                <ul class="catalog sort">
-                    <li><a href="#">По цене</a></li>
+                <div class="sort-wrapper">
+                <p class="sort-title">Сортировать:</p>
+                <ul class="catalog-sort">
+                    <li><a class="active"href="#">По цене</a></li>
                     <li><a href="#">По типу</a></li>
                     <li><a href="#">По названию</a></li>
-                    <li><a class="arrow arrow-down" href="#">По убыванию</a></li>
-                    <li><a class="arrow arrow-up" href="#">По возрастанию</a></li>
+                    <li class="arrow-down"><a class="active" href="#"><img src = "img/icon-down-dir.svg" alt = "по убыванию" width = "11" height = "10">
+                    <span class = "visually-hidden">По убыванию</span></a></li>
+                    <li class="arrow-up"><a href="#"> <img src = "img/icon-up-dir.svg" alt="По возрастанию" width = "11" height="10">
+                    <span class="visually-hidden">По возрастанию</span></a></li>
                 </ul>
+            </div>
                 <ul class="catalog-list">
                     <li class="catalog-item" aria-label="Седона">
                         <a href="#"><img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona"></a>
                         <div class="info-block">
                             <h3>Sedona</h3>
-                            <p>Информационный сайт для туристов</p>
+                            <p>Информационный сайт<br> для туристов</p>
                             <a class="catalog-button" href="basket.html">9 900 руб.</a>
                         </div>
                     </li>
@@ -146,7 +150,7 @@
                         <a href="#"><img src="img/img-barbershop.jpg" width="360" height="576" alt="Borodinsky"></a>
                         <div class="info-block">
                             <h3>Barbershop</h3>
-                            <p>Сайт салона красоты. Для мужчин, да.</p>
+                            <p>Сайт салона красоты.<br> Для мужчин, да.</p>
                             <a class="catalog-button" href="basket.html">9 900 руб.</a>
                         </div>
                     </li>
@@ -154,7 +158,7 @@
                         <a href="#"><img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka"></a>
                         <div class="info-block">
                             <h3>Mishka</h3>
-                            <p>Интернет-магазин вязаных игрушек.</p>
+                            <p>Интернет-магазин<br> вязаных игрушек.</p>
                             <a class="catalog-button" href="basket.html">9 900 руб.</a>
                         </div>
                     </li>
@@ -170,7 +174,7 @@
                         <a href="#"><img src="img/img-kvast.jpg" width="360" height="576" alt="Kvast"></a>
                         <div class="info-block">
                             <h3>Кваст</h3>
-                            <p>Промо-сайт производителя крафтового кваса.</p>
+                            <p>Промо-сайт производителя<br> крафтового кваса.</p>
                             <a class="catalog-button" href="basket.html">9 900 руб.</a>
                         </div>
                     </li>
