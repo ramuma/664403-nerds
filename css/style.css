@@ -207,8 +207,6 @@ a {
     min-height: 427px;
     margin: 0 auto 32px auto;
     border-bottom: 2px solid #eeeeee;
-    /*padding-right: 20px;
-    padding-left: 20px;*/
 }
 .services-item {
     list-style: none;
@@ -517,18 +515,9 @@ a {
     width: 220px;
     text-align: center;
 }
-.main-footer {
+.footer {
     width: 100%}
 .footer-social {
-    width: 1160px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin: 65px auto;
-    padding-right: 20px;
-    padding-left: 20px;
-}
-.footer-catalog {
     width: 1160px;
     display: flex;
     justify-content: flex-start;
@@ -577,18 +566,6 @@ a {
     font-weight: 700;
 }
 .friendship-small {
-    line-height: 22px;
-    margin-top: 10px;
-}
-.friendship-large-catalog {
-    margin: 0;
-    padding: 0;
-    padding-top: 5px;
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: 700;
-}
-.friendship-small-catalog {
     line-height: 22px;
     margin-top: 10px;
 }
