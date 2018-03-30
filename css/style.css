@@ -204,7 +204,7 @@ a {
 }
 .services {
     width: 1160px;
-    min-height: 430px;
+    min-height: 427px;
     margin: 0 auto 32px auto;
     border-bottom: 2px solid #eeeeee;
     /*padding-right: 20px;
@@ -308,7 +308,7 @@ a {
     font-weight: 500;
     color: #000000;
     margin: 0;
-    margin-top: 35px;
+    margin-top: 38px;
     margin-bottom: 18px;
     padding: 0;
 }
@@ -386,7 +386,8 @@ a {
     width: 360px;
     height: 210px;
     margin-left: auto;
-    margin-bottom: 35px;
+    margin-bottom: 32px;
+    margin-top: 8px;
     background: url(../img/nerds-illustration.png) no-repeat 100% 0;
 }
 .features-numbers h2 {
@@ -405,6 +406,7 @@ a {
     width: 1160px;
     margin: 0 auto;
     margin-bottom: 80px;
+    margin-top: 10px;
     border-bottom: 2px solid #eeeeee;
     border-top: 2px solid #eeeeee;
 }
@@ -429,7 +431,7 @@ a {
     padding-left: 31px;
     padding-right: 51px;
     padding-top: 62px;
-    padding-bottom: 50px;
+    padding-bottom: 5opx;
 }
 .projects .borodinskiy {
     padding-left: 45px;
@@ -482,7 +484,7 @@ a {
     position: absolute;
     top: 56px;
     left: 140px;
-    padding: 48px 50px 47px;
+    padding: 32px 50px 42px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -490,8 +492,9 @@ a {
 }
 .address p {
     font: inherit;
+    line-height: 18px;
     color: #666666;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
 }
 .phone {
     color: #666666;
@@ -505,10 +508,12 @@ a {
     font-weight: 700;
     color: #000000;
     margin: 0;
+    padding: 0;
+    padding-bottom: 7px;
 }
 .button.write {
     padding: 15px 0 15px 0;
-    margin-top: 33px;
+    margin-top: 36px;
     width: 220px;
     text-align: center;
 }
