@@ -882,6 +882,7 @@ a {
 }
 .price-controls label {
     display: inline-block;
+    vertical-align: top;
     width: 50%;
     font-size: 16px;
     text-transform: uppercase;
@@ -1007,6 +1008,7 @@ a {
     min-height: 231px;
     bottom: 0;
     display: inline-block;
+    vertical-align: top;
     text-align: center;
 }
 .catalog-item .info-block {
