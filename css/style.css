@@ -28,6 +28,14 @@ a {
     padding-right: 20px;
     padding-left: 20px;
     flex-wrap: wrap;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-navigation img {
+    margin: 0;
+    padding: 0;
 }
 .main-header img:hover {
     opacity: 0.8;
@@ -35,28 +43,26 @@ a {
 .main-header img:active {
     opacity: 0.3;
 }
-.site-navigation ul {
-    list-style: none;
+.site-navigation {
     padding: 0;
     margin: 0;
-    margin-top: 26px;
-    width: 440px;
+    margin-top: 15px;
     display: flex;
     list-style: none;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
-.main-navigation img {
-    padding-right: 200px;
+.site-navigation li {
+    margin-right: 45px;
 }
-.site-navigation a {
+.site-navigation a,
+.site-navigation-catalog a {
     color: #000000;
     margin: 0;
 }
-.site-navigation a:hover,.basket a:hover {
+.site-navigation a:hover,.basket a:hover, .site-navigation-catalog a:hover {
     color: #ff6666;
 }
-.site-navigation a:active,.basket a:active {
+.site-navigation a:active,.basket a:active, .site-navigation-catalog a:active {
     color: #000000;
     opacity: 0.3;
 }
@@ -72,9 +78,10 @@ a {
     text-transform: uppercase;
     max-width: 120px;
     padding: 0;
-    margin-top: 26px;
-    margin-left: 246px;
+    margin: 0;
+    margin-top: 14px;
 }
+
 .basket a {
     color: #000000;
 }
@@ -660,7 +667,7 @@ a {
 .catalog-navigation img {
     margin: 0;
 }
-.site-navigation {
+.site-navigation-catalog {
     padding: 0;
     margin: 0;
     margin-top: 10px;
@@ -668,8 +675,8 @@ a {
     list-style: none;
     justify-content: space-between;
 }
-.site-navigation li {
-    margin-right: 48px;
+.site-navigation-catalog li {
+    margin-right: 46px;
 }
 
 .basket {
