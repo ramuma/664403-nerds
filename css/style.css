@@ -37,10 +37,10 @@ a {
     margin: 0;
     padding: 0;
 }
-.main-header img:hover {
+.catalog-header img:hover {
     opacity: 0.8;
 }
-.main-header img:active {
+.catalog-header img:active {
     opacity: 0.3;
 }
 .site-navigation {
