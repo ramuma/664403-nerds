@@ -597,7 +597,6 @@ a {
     left: 240px;
     box-shadow: 0 14px 80px 0 rgba(0,0,0,0.8);
     z-index: 2;
-
 }
 .contact-us h2 {
     font-size: 45px;
@@ -613,7 +612,6 @@ a {
 .user-wrapper {
     display: flex;
 }
-
 .contact-form label {
     font-size: 16px;
     color: #000000;
@@ -824,17 +822,17 @@ a {
 .radio+label::before {
     content: "";
     position: absolute;
-    width: 25px;
-    height: 25px;
+    width: 26px;
+    height: 26px;
     left: 0px;
     top: 0px;
     background: url(../img/radio-off.svg) no-repeat;
 }
-.radio: checked+label::before {
+.radio:checked+label::before {
     content: "";
     position: absolute;
-    width: 25px;
-    height: 25px;
+    width: 26px;
+    height: 26px;
     left: 0px;
     top: 0px;
     background: url(../img/radio-on.svg) no-repeat;
