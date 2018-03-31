@@ -1023,6 +1023,11 @@ a {
 .catalog-item:hover .info-block {
     display: block;
 }
+
+.catalog-item:focus-within .info-block {
+    display: block;
+}
+
 .catalog-button {
     display: inline-block;
     line-height: 18px;
