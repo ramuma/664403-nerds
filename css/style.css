@@ -59,17 +59,30 @@ a {
     color: #000000;
     margin: 0;
 }
-.site-navigation a:hover,.basket a:hover, .site-navigation-catalog a:hover {
+.site-navigation a:hover,
+.basket a:hover, 
+.site-navigation-catalog a:hover {
     color: #ff6666;
 }
-.site-navigation a:active,.basket a:active, .site-navigation-catalog a:active {
+.site-navigation a:active,
+.basket a:active, 
+.site-navigation-catalog a:active {
     color: #000000;
     opacity: 0.3;
 }
-.current a,.current a:hover,.current a:active {
+.current a,
+.current a:hover,
+.current a:active {
     color: #000000;
     border-bottom: 2px solid #ff6666;
     padding-bottom: 8px;
+    opacity: 1;
+}
+.current-main a,
+.current-main a:hover,
+.current-main a:active {
+    color: #000000;
+    opacity: 1;
 }
 .basket {
     list-style: none;
@@ -931,6 +944,8 @@ a {
     width: 70%;
     height: 2px;
     background: #00ca74;
+    margin-left: 5%; 
+    width: 140px;
 }
 .range-controls .toggle {
     position: absolute;
