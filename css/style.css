@@ -144,6 +144,7 @@ a {
 .slider-controls label {
     position: relative;
     display: inline-block;
+    vertical-align: top;
     width: 18px;
     height: 18px;
     padding: 8px;
@@ -268,6 +269,7 @@ a {
 }
 .button {
     display: inline-block;
+    vertical-align: top;
     border-radius: 3px;
     line-height: 18px;
     text-align: center;
@@ -409,6 +411,7 @@ a {
 .features-numbers::before {
     content: "";
     display: inline-block;
+    vertical-align: top;
     width: 360px;
     height: 210px;
     margin-left: auto;
@@ -493,7 +496,7 @@ a {
 .projects a:focus {
     opacity: 1;
 }
-.projects img:active {
+.projects a:active {
     opacity: 0.1;
 }
 .contacts {
@@ -1127,6 +1130,7 @@ a {
 }
 .catalog-button {
     display: inline-block;
+    vertical-align: top;
     line-height: 18px;
     text-align: center;
     color: #ffffff;
