@@ -605,7 +605,7 @@ a {
 
 .modal {
     position: fixed;
-    /*display: none;*/
+    display: none;
 }
 .modal.contact-us {
     width: 780px;
