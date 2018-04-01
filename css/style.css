@@ -1024,7 +1024,9 @@ a {
     text-decoration: none;
     font-size: 14px;
     line-height: 18px;
-    text-transform: uppercase;
+    text-transform: uppercase;   
+}
+.catalog-sort a:not(.active) {
     opacity: 0.3;
 }
 .catalog-sort li {
@@ -1037,11 +1039,12 @@ a {
 .catalog-sort .arrow-up {
     margin-right: 0;
 }
-.catalog-sort a:hover,.catalog-sort a:focus {
+.catalog-sort a:not(.active):hover,.catalog-sort a:not(.active):focus {
     opacity: 0.6;
 }
 .catalog-sort a:active,.catalog-sort .active {
     opacity: 1;
+    cursor: default;
 }
 .catalog {
     list-style: none;
