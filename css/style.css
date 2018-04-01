@@ -450,7 +450,7 @@ a {
     align-items: center;
     position: relative;
 }
-.projects img {
+.projects a {
     opacity: 0.2;
 }
 .projects .htmlacademy {
@@ -489,8 +489,8 @@ a {
     z-index: 1;
     background-color: #eeeeee;
 }
-.projects img:hover,
-.projects img:focus {
+.projects a:hover,
+.projects a:focus {
     opacity: 1;
 }
 .projects img:active {
