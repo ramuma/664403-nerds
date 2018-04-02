@@ -1124,7 +1124,7 @@ a {
     margin-bottom:15px;
 }
 .catalog-item .info-block {
-    /*display: none;*/
+    display: none;
 }
 .catalog-item:hover .info-block {
     display: block;
