@@ -6,6 +6,7 @@ body {
     line-height: 24px;
     font-weight: 400;
     color: #333333;
+    min-width: 1200px;
 }
 a {
     text-decoration: none;
@@ -453,7 +454,7 @@ a {
     align-items: center;
     position: relative;
 }
-.projects a {
+.projects img {
     opacity: 0.2;
 }
 .projects .htmlacademy {
@@ -492,11 +493,11 @@ a {
     z-index: 1;
     background-color: #eeeeee;
 }
-.projects a:hover,
-.projects a:focus {
+.projects img:hover,
+.projects img:focus {
     opacity: 1;
 }
-.projects a:active {
+.projects img:active {
     opacity: 0.1;
 }
 .contacts {
@@ -805,6 +806,9 @@ a {
 .catalog-container {
     width: 1160px;
     margin: 0 auto;
+    padding: 0;
+    padding-right: 20px;
+    padding-left: 20px;
     display: flex;
     justify-content: space-between;
 }
