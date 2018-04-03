@@ -7,7 +7,11 @@ var email = popup.querySelector("[name=email]");
 var message = popup.querySelector("[name=message]");
 var isStorageSupport = true;
 var storage = "";
-  
+ try {
+    storage = localStorage.getItem("login");
+  } catch (err) {
+    isStorageSupport = false;
+  } 
         
 link.addEventListener("click", function (evt) {
     evt.preventDefault();
