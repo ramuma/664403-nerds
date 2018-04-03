@@ -523,6 +523,7 @@ a {
   left: 0;
   z-index: 1;
   margin: 0;
+  max-width: 100%;
 }
 .address {
     width: 319px;
@@ -1066,49 +1067,59 @@ a {
 .max-price {
     text-align: right;
 }
-/*.sort-wrapper {
-    display: flex;
-    justify-content: space-between;
-    /*width: 760px;
-    margin-bottom: 53px;
-    align-items: flex-start;*/
-}
+
 .catalog-sort {
     list-style: none;
-    /*display: flex;*/
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
     margin: 0;
     padding: 0;
+    width: 360px;
+    margin-bottom: 51px;
 }
 .sort-title {
     padding: 0;
     margin: 0;
+    margin-right: 180px;
     font-size: 18px;
     line-height: 18px;
     font-weight: 700;
     color: #000000;
     text-transform: uppercase;
+    display: inline-block;
+    vertical-align: top;
 }
 .catalog-sort a {
     color: #000000;
     text-decoration: none;
     font-size: 14px;
     line-height: 18px;
-    text-transform: uppercase;   
+    text-transform: uppercase; 
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
 }
 .catalog-sort a:not(.active) {
     opacity: 0.3;
 }
 .catalog-sort li {
+    margin: 0;
+    padding: 0;
     margin-right: 25px;
     display: inline-block;
     vertical-align: top;
 }
 .catalog-sort .arrow-down {
-    margin-right: 15px;
-    margin-left: 25px;
+    margin: 0;
+    padding: 0;
+    /*margin-right: 10px;
+    margin-left: 20px;*/
 }
 .catalog-sort .arrow-up {
-    margin-right: 0;
+    margin: 0;
+    padding: 0;
 }
 .catalog-sort a:not(.active):hover,.catalog-sort a:not(.active):focus {
     opacity: 0.6;
@@ -1117,6 +1128,7 @@ a {
     opacity: 1;
     cursor: default;
 }
+
 .catalog {
     list-style: none;
     color: #333333;
