@@ -643,6 +643,16 @@ a {
     transform: translateY(0);
   }
 }
+
+.modal {
+    position: fixed;
+    display: none;
+}
+.modal-show {
+  display: block;
+  animation: bounce 1s;
+}
+
 @keyframes shake {
   0%,
   100% {
@@ -663,14 +673,6 @@ a {
   80% {
     transform: translateX(10px);
   }
-}
-.modal {
-    position: fixed;
-    display: none;
-}
-.modal-show {
-  display: block;
-  animation: bounce 0.6s;
 }
 .modal-error {
   animation: shake 0.6s;
@@ -741,8 +743,11 @@ a {
     border-color: #000000;
 }
 .form-field:required:invalid {
-    border-color: #ff3333;
-    color: #ff3333;
+  border-color: #e74246;
+  color: #e74246;
+}
+.form-field:required:invalid::placeholder {
+  color: #e74246;
 }
 .form-field {
     width: 334px;
