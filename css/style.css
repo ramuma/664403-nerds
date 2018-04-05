@@ -648,6 +648,15 @@ a {
 .modal {
     position: fixed;
     display: none;
+
+    width: 780px;
+    padding: 68px 80px 80px 100px;
+    border: 1px solid #eeeeee;
+    background-color: #ffffff;
+    top: 50px;
+    left: 240px;
+    box-shadow: 0 14px 80px 0 rgba(0,0,0,0.8);
+    z-index: 103;
 }
 .modal-show {
   display: block;
@@ -678,24 +687,15 @@ a {
 .modal-error {
   animation: shake 0.6s;
 }
-.modal.contact-us {
-    width: 780px;
-    padding: 68px 80px 80px 100px;
-    border: 1px solid #eeeeee;
-    background-color: #ffffff;
-    top: 50px;
-    left: 240px;
-    box-shadow: 0 14px 80px 0 rgba(0,0,0,0.8);
-    z-index: 103;
-}
-.contact-us h2 {
+
+.modal h2 {
     font-size: 45px;
     line-height: 45px;
     font-weight: 500;
     margin: 0;
     margin-bottom: 42px;
 }
-.contact-us p {
+.modal p {
     margin: 0;
     padding: 0;
 }
