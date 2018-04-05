@@ -1076,28 +1076,28 @@ a {
 }
 
 /* СОРТИРОВКА */
-
+.sort-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
 .catalog-sort {
     list-style: none;
-    display: inline-block;
-    vertical-align: top;
     text-align: right;
     margin: 0;
     padding: 0;
     width: 360px;
     margin-bottom: 51px;
+    display: flex;
+    justify-content: space-between;
 }
 .sort-title {
     padding: 0;
     margin: 0;
-    margin-right: 180px;
     font-size: 18px;
     line-height: 18px;
     font-weight: 700;
     color: #000000;
     text-transform: uppercase;
-    display: inline-block;
-    vertical-align: top;
 }
 .catalog-sort a {
     color: #000000;
@@ -1107,8 +1107,6 @@ a {
     text-transform: uppercase; 
     margin: 0;
     padding: 0;
-    display: inline-block;
-    vertical-align: top;
 }
 .catalog-sort a:not(.active) {
     opacity: 0.3;
@@ -1117,13 +1115,12 @@ a {
     margin: 0;
     padding: 0;
     margin-right: 25px;
-    display: inline-block;
-    vertical-align: top;
 }
 .catalog-sort .arrow-down {
     margin: 0;
     padding: 0;
-    margin-right: 10px;
+    margin-right: 17px;
+    margin-left: 25px;
 }
 .catalog-sort .arrow-up {
     margin: 0;
@@ -1135,6 +1132,9 @@ a {
 .catalog-sort a:active,.catalog-sort .active {
     opacity: 1;
     cursor: default;
+}
+.sort-text {
+    font-size: 0;
 }
 
 .catalog {
@@ -1150,7 +1150,7 @@ a {
     flex-wrap: wrap;
     /*width: 760px;*/
     justify-content: space-between;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
 }
 .catalog-item {
     position: relative;
