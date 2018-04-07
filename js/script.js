@@ -46,6 +46,24 @@ var isStorageSupport = true;
       }
     }
   });
+
+  form.addEventListener("submit", function(evt) {
+  name.classList.remove("error");
+  email.classList.remove("error");
+  message.classList.remove("error");
+  if(!name.value) {
+    evt.preventDefault();
+    userName.classList.add("error");
+  }
+  if(!email.value) {
+    evt.preventDefault();
+    email.classList.add("error");
+  }
+  if(!message.value) {
+    evt.preventDefault();
+    message.classList.add("error");
+  }
+});
   
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
