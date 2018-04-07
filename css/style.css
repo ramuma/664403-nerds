@@ -693,12 +693,6 @@ a {
 .form-field.error::placeholder {
   color: #e74246;
 }
-.form-field.error::-ms-input-placeholder {
-  color: #000000;
-}
-.form-field.error:-ms-input-placeholder {
-  color: #000000;
-}
 
 .modal h2 {
     font-size: 45px;
