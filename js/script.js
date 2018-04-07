@@ -53,7 +53,7 @@ var isStorageSupport = true;
   message.classList.remove("error");
   if(!name.value) {
     evt.preventDefault();
-    userName.classList.add("error");
+    name.classList.add("error");
   }
   if(!email.value) {
     evt.preventDefault();
